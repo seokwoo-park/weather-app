@@ -23,6 +23,7 @@ export const loadWeather = (city) => async(dispatch)=>{
         console.log(res.data)
         const response = {
             ...res.data.main,
+            icon: res.data.weather[0].icon,
             desc: res.data.weather[0].description,
             main: res.data.weather[0].main,
             location:`${res.data.name}, ${res.data.sys.country}`

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import {loadWeather} from '../redux/action'
+import SearchIcon from '@material-ui/icons/Search';
+import '../css/input.css'
 
 
 function Input() {
@@ -21,10 +23,12 @@ function Input() {
 
     return (
         <div>
-            <form onSubmit={onSubmitHandler}>
-                <input onChange={onChangeHandler} type="text" placeholder="Search..." value={searchCity}/>
-                <input type="submit" value="Search"/>
-            </form>
+            <div className="search-box">
+                <form onSubmit={onSubmitHandler}>
+                    <input onChange={onChangeHandler} className="search-bar" type="text" placeholder="Search 'Tokyo'" value={searchCity}/>
+                    <SearchIcon className="search-icon"/>
+                </form>
+            </div>
         </div>
     )
 }
