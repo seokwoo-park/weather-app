@@ -1,0 +1,28 @@
+.background-day {
+    position: absolute;
+    z-index: -1;
+    background: linear-gradient(#199df5, #8bc5eb);
+    width: 100%;
+    height: 100vh;
+}
+
+.bg-day-sun {
+    position: absolute;
+    top: 100px;
+    left: 300px;
+    width: 100px;
+    height: 100px;
+    background: #eb6e4b;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.bg-day-forest {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    object-fit: cover;
+    /* transform: scaleX(1), scaleY(1); */
+}

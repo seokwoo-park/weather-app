@@ -32,7 +32,7 @@ function WeatherInfo() {
                     <div className="location-box"><LocationOnIcon/>{weather.location}</div>
                     <div className="temp-box">{weather.temp}°C</div>
                     <div className="weather-box">{weather.desc}</div>
-                    <img src={`http://openweathermap.org/img/wn/${weather.icon}@4x.png`}/>
+                    <img className="weather-icon" src={`http://openweathermap.org/img/wn/${weather.icon}@4x.png`}/>
                 </div>
                 : null
             }

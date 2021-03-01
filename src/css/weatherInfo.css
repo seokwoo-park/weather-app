@@ -5,6 +5,7 @@
     margin: 40px auto;
     background-color: rgba(50, 50, 70, 0.2);
     transition: all 2s ease;
+    z-index: 100;
 }
 
 .location-box {
@@ -34,10 +35,11 @@
 
 .temp-box {
     position: relative;
-    display: inline-block;
+    display: block;
     margin: 30px auto;
     background-color: rgba(255, 255, 255, 0.2);
     border-radius: 16px;
+    width: 80%;
 
     padding: 15px 25px;
 
@@ -48,4 +50,10 @@
     text-shadow: 3px 6px rgba(50, 50, 70, 0.5);
     text-align: center;
     box-shadow: 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.weather-icon {
+    text-align: center;
+    display: block;
+    margin: 10px auto;
 }
