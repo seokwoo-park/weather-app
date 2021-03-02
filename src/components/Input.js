@@ -17,6 +17,7 @@ function Input() {
     const onSubmitHandler = (e) => {
         e.preventDefault();
         dispatch(loadWeather(searchCity))
+        setSearchCity('')
         console.log('submit')
     }
     
@@ -26,7 +27,7 @@ function Input() {
             <div className="search-box">
                 <form onSubmit={onSubmitHandler}>
                     <input onChange={onChangeHandler} className="search-bar" type="text" placeholder="Search 'Tokyo'" value={searchCity}/>
-                    <SearchIcon className="search-icon"/>
+                    <button><SearchIcon className="search-icon"/></button>
                 </form>
             </div>
         </div>
